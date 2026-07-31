@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block page_title %}Farm Detail{% endblock %}
+
+{% block page_content %}
+
+<h1>{{ farm.name }}</h1>
+
+<p>City: {{ farm.city }}</p>
+
+<p>Area: {{ farm.area }}</p>
+
+<p>Owner: {{ farm.owner.username }}</p>
+
+<p>Description: {{ farm.descreaption }}</p>
+
+<p>created at : {{farm.created_at}}</p>
+
+{% endblock %}

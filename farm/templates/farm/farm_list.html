@@ -9,9 +9,10 @@
 {% for farm in farms  %}
 
 <ul>
-    <li>{{farm.name}}</li>
-    <li>{{farm.city}}</li>
-    <li>{{farm.area}}</li>
+    <li>name : {{farm.name}}</li>
+    <li>city : {{farm.city}}</li>
+    <li>area : {{farm.area}}</li> 
+    <a href="{% url 'farm:farmdetai' farm.pk %}">Detail</a>   
     <hr>
 </ul>
 
