@@ -16,4 +16,6 @@
 
 <p>created at : {{farm.created_at}}</p>
 
+<a href="{% url 'farm:farmdelete' farm.pk %}" class="btn btn-danger"> Delete </a>
+
 {% endblock %}

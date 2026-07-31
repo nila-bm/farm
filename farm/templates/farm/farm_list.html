@@ -13,8 +13,8 @@
     <li>city : {{farm.city}}</li>
     <li>area : {{farm.area}}</li> 
     <a href="{% url 'farm:farmdetail' farm.pk %}">Detail</a>   
-    <a href="{% url 'farm:farmupdate' farm.pk %}">Edit</a>   
-
+    <a href="{% url 'farm:farmupdate' farm.pk %}">Edit</a>
+    <a href="{% url 'farm:farmdelete' farm.pk %}">Delete</a>      
     <hr>
 </ul>
 
