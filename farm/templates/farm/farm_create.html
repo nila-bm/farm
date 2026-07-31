@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block page_title %}Create Farm{% endblock %}
+
+{% block page_content %}
+
+<h2>Create Farm</h2>
+
+<form method="post">
+
+    {% csrf_token %}
+
+    {{ form.as_p }}
+
+    <button type="submit">Save</button>
+
+</form>
+
+{% endblock %}

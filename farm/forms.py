@@ -5,4 +5,4 @@ class FarmForm(forms.ModelForm):
 
     class Meta:
         model = Farm
-        fields = ['name','city','area']
+        fields = '__all__'
