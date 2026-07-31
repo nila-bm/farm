@@ -4,17 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel=stylesheet href="{% static "bootstrap/bootstrap.min.css" %}">
+    <link rel="stylesheet" href="{% static 'bootstrap/bootstrap.min.css' %}">
     {% block css_content %}{% endblock css_content %}
     <title>{% block page_title %}{% endblock page_title %}</title>
 </head>
 <body>
     
-    {% include "includes/navbar.html" %}
 
     {% block page_content %}{% endblock page_content %}
 
-    <script src="{% static "bootstrap/bootstrap.bundle.min.js" %}"></script>
+    <script src="{% static 'bootstrap/bootstrap.bundle.min.js' %}"></script>
     {% block page_scripts %}{% endblock page_scripts %}
 </body>
 </html>

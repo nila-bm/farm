@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block page_title %}ListOfFarm{% endblock page_title %}
+
+{% block page_content %}
+
+<h1>List of farm</h1>
+
+{% for farm in farms  %}
+
+<ul>
+    <li>{{farm.name}}</li>
+    <li>{{farm.city}}</li>
+    <li>{{farm.area}}</li>
+    <hr>
+</ul>
+
+{% endfor %}
+
+{% endblock page_content %}
+
+

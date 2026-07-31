@@ -1,8 +1,8 @@
 from django.urls import path
-from . import views
+from .views import FarmListView
 
 app_name = 'farm'
 
 urlpatterns = [
-    path("",views.home,name="home")
+    path("list/",FarmListView.as_view(),name="farmlist")
 ]
