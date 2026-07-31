@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block page_title %}
+Update Farm
+{% endblock %}
+
+{% block page_content %}
+
+<h2>Update Farm</h2>
+
+<form method="post">
+
+    {% csrf_token %}
+
+    {{ form.as_p }}
+
+    <button class="btn btn-warning">
+
+        Update
+
+    </button>
+
+</form>
+
+{% endblock %}

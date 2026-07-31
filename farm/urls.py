@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import FarmListView,FarmHome,FarmDetailView,FarmCreateView
+from .views import FarmListView,FarmHome,FarmDetailView,FarmCreateView,FarmUpdateView
 
 app_name = 'farm'
 
@@ -8,4 +8,5 @@ urlpatterns = [
     path("list/",FarmListView.as_view(),name="farmlist"),
     path("<int:pk>/",FarmDetailView.as_view(), name="farmdetail"),
     path("create/",FarmCreateView.as_view(),name="farmcreate"),
+    path("<int:pk>/update/",FarmUpdateView.as_view(),name="farmupdate")
 ]

@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.views.generic import DetailView,TemplateView,ListView,CreateView
+from django.views.generic import DetailView,TemplateView,ListView,CreateView,UpdateView
 from .models import Farm
 from .forms import FarmForm
 from django.urls import reverse_lazy
@@ -24,6 +24,12 @@ class FarmCreateView(CreateView):
     model = Farm
     form_class = FarmForm
     template_name = 'farm/farm_create.html'
+    success_url = reverse_lazy('farm:farmlist')
+
+class FarmUpdateView(UpdateView):
+    model = Farm
+    form_class = FarmForm
+    template_name = 'farm/farm_update.html'
     success_url = reverse_lazy('farm:farmlist')
 
   
